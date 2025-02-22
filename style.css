@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --body-size: 15px;
+    --lexend-deca: 'Lexend Deca', serif;
+    --big-shoulders-display: "Big Shoulders Display", serif;
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+main {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+@media ( width < 375px ) {
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+.card:nth-child(1) {
+    background-color: var(--bright-orange);
+}
+
+.card:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(3) {
+    background-color: var(--very-dark-cyan);
+}
+
+.card {
+    padding: 58px;
+    width: 326px;
+}
+
+.card h1 {
+    font-family: var(--big-shoulders-display);
+    color: var(--very-light-gray);
+    font-size: 40px;
+    margin: 36px 0;
+}
+
+.card p {
+    font-family: var(--lexend-deca);
+    color: var(--transparent-white);
+    font-size: var(--body-size);
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+.card .button {
+    border: none;
+    border-radius: 40px;
+    padding: 14px 36px;
+    background-color: var(--very-light-gray);
+    font-family: var(--lexend-deca);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card:nth-child(1) .button:hover {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--bright-orange);
+}
+
+.card:nth-child(2) .button:hover {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(3) .button:hover {
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--very-dark-cyan);
+}
+
+.card:nth-child(1) button {
+    color: var(--bright-orange);
+}
+
+.card:nth-child(2) button {
+    color: var(--dark-cyan);
+}
+
+.card:nth-child(3) button {
+    color: var(--very-dark-cyan);
+}
