@@ -84,19 +84,19 @@ main {
 
 .card:nth-child(1) .button:hover {
     color: var(--very-light-gray);
-    border: 2px solid var(--very-light-gray);
+    outline: 2px solid var(--very-light-gray);
     background-color: var(--bright-orange);
 }
 
 .card:nth-child(2) .button:hover {
     color: var(--very-light-gray);
-    border: 2px solid var(--very-light-gray);
+    outline: 2px solid var(--very-light-gray);
     background-color: var(--dark-cyan);
 }
 
 .card:nth-child(3) .button:hover {
     color: var(--very-light-gray);
-    border: 2px solid var(--very-light-gray);
+    outline: 2px solid var(--very-light-gray);
     background-color: var(--very-dark-cyan);
 }
 
